@@ -101,6 +101,7 @@ refractainstaller_configuration
 
 
 # Record errors in a logfile.
+mkdir -p "$(dirname "$error_log")"
 exec 2>"$error_log"
 
 if [[ $DEBUG = "yes" ]] ; then
